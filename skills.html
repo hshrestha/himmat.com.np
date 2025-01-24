@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Himmat Shrestha</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --accent-color: #dbeafe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--bg-color);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .section {
+            padding: 8rem 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            background-color: var(--accent-color);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+        .skill-category h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-level {
+            height: 8px;
+            background-color: var(--bg-color);
+            border-radius: 4px;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .skill-level-fill {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/himmat.com.np/logo.png?height=40&width=40" alt="HS Logo">
+                <span>Himmat Shrestha</span>
+            </a>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h2>Frontend Development</h2>
+                <ul class="skill-list">
+                    <li>
+                        HTML5/CSS3
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 95%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        JavaScript/TypeScript
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        React.js
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>Backend Development</h2>
+                <ul class="skill-list">
+                    <li>
+                        Node.js
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 88%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        Python
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 82%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        Database Management
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>DevOps & Cloud</h2>
+                <ul class="skill-list">
+                    <li>
+                        AWS
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 80%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        Docker
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 85%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        CI/CD
+                        <div class="skill-level">
+                            <div class="skill-level-fill" style="width: 78%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Himmat Shrestha. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
