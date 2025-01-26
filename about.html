@@ -129,22 +129,20 @@
             }
         }
     </style>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="/himmat.com.np/logo.png?height=40&width=40" alt="HS Logo">
-                <span>Himmat Shrestha</span>
-            </a>
-            <nav>
-                <a href="/himmat.com.np/about.html">About</a>
-                <a href="/himmat.com.np/skills.html">Skills</a>
-                <a href="/himmat.com.np/projects.html">Projects</a>
-                <a href="/himmat.com.np/contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <section class="section">
         <h1>About Me</h1>
@@ -162,13 +160,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Himmat Shrestha. All rights reserved.</p>
-        <div class="social-links">
-            <img src="https://icons.getbootstrap.com/assets/icons/linkedin.svg?height=24&width=24"><a href="#">LinkedIn</a>
-            <img src="https://icons.getbootstrap.com/assets/icons/github.svg?height=24&width=24"><a href="#">GitHub</a>
-            <img src="https://icons.getbootstrap.com/assets/icons/twitter-x.svg?height=24&width=24"><a href="#">X</a>
-        </div>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>
